@@ -22,10 +22,10 @@ function generatePassword() {
     let length = lenght_el.value;
     let chars = "";
 
-    chars += uppercase_el.checked? uppercase_chars :"";
-    chars += lowercase_el.checked? lowerecase_chars :"";
-    chars += numbers_el.checked? numbers_chars :"";
-    chars += symbols_el.checked? symbols_chars :"";
+    chars += uppercase_el.checked ? uppercase_chars :"";
+    chars += lowercase_el.checked ? lowerecase_chars :"";
+    chars += numbers_el.checked ? numbers_chars :"";
+    chars += symbols_el.checked ? symbols_chars :"";
 
     for (let i = 0; i <= length; i++) {
        let random = Math.floor(Math.random() * chars.length);
